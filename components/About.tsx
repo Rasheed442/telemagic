@@ -57,7 +57,7 @@ function About() {
           viewport={{ once: true }}
           className="bg-[#D43429] text-white text-[16px] md:text-[18px] uppercase font-medium text-center rounded-sm py-2 px-4"
         >
-          Licensed by NCC and NDPC
+          Regulatory & Compliance
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

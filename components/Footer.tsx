@@ -14,10 +14,10 @@ function Footer() {
           <div className="md:w-[35%]">
             <div className="flex items-center gap-2 mb-5">
               <Image
-                src={logo2}
+                src={logo}
                 alt="TeleMagic Logo"
-                width={130}
-                height={40}
+                width={170}
+                height={170}
                 className="object-contain"
               />
             </div>

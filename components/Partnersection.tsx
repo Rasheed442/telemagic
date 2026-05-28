@@ -14,23 +14,13 @@ const partners = [
   { name: "AFP", logo: afp },
 ];
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: { staggerChildren: 0.1 },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, scale: 0.8 },
-  show: { opacity: 1, scale: 1, transition: { duration: 0.4 } },
-};
+// Duplicate 4 times to ensure it spans across large screens and loops perfectly
+const extendedPartners = [...partners, ...partners, ...partners, ...partners];
 
 function PartnersSection() {
   return (
-    <section id="partners" className="w-full bg-white py-20 px-4">
-      <div className="max-w-[1300px] mx-auto">
+    <section id="partners" className="w-full bg-white py-20 overflow-hidden">
+      <div className="max-w-[1300px] mx-auto px-4">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,21 +37,28 @@ function PartnersSection() {
             solutions.
           </p>
         </motion.div>
+      </div>
 
-        {/* Logos Row */}
+      {/* Logos Carousel Marquee */}
+      <div className="relative w-full flex items-center py-4 overflow-hidden">
+        {/* Fading Edges */}
+        <div className="absolute top-0 left-0 w-16 md:w-32 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-16 md:w-32 h-full bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+
         <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, margin: "-100px" }}
-          className="flex flex-wrap justify-center items-center gap-6"
+          className="flex gap-8 md:gap-12 w-max pr-8 md:pr-12"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            repeat: Infinity,
+            ease: "linear",
+            duration: 35, // Adjust for scroll speed
+          }}
         >
-          {partners.map((partner) => (
+          {extendedPartners.map((partner, idx) => (
             <motion.div
-              variants={itemVariants}
+              key={idx}
               whileHover={{ scale: 1.05 }}
-              key={partner.name}
-              className="w-[110px] h-[110px] rounded-xl overflow-hidden flex items-center justify-center bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200"
+              className="w-[120px] h-[120px] flex-shrink-0 rounded-xl overflow-hidden flex items-center justify-center bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200 cursor-pointer"
             >
               <Image
                 src={partner.logo}

@@ -41,11 +41,11 @@ function ContactSection() {
           />
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-[#0D2340]/80" />
-          
+
           {/* Content */}
           <div className="relative z-10 flex flex-col md:flex-row gap-12 p-10 md:p-14">
             {/* Left: Info */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -55,8 +55,8 @@ function ContactSection() {
               <span className="inline-block bg-[#D43429] text-white text-[15px] rounded-md font-medium font-ibm-plex-sans uppercase px-4 py-2 w-fit">
                 CONTACT US
               </span>
-              <h2 className="text-[38px] md:text-[44px] font-normal font-serif text-white leading-[1.15]">
-                Feel free to contact with us
+              <h2 className="text-[38px] md:text-[35px] font-normal font-serif text-white leading-[1.15]">
+                We’re always available to assist you.
               </h2>
               <p className="text-[15px] text-[#a8bdd4] leading-relaxed">
                 Reach out to our team for inquiries, support, or a personalized
@@ -129,7 +129,7 @@ function ContactSection() {
             </motion.div>
 
             {/* Right: Form */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
