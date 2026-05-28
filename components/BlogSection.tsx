@@ -12,21 +12,21 @@ const posts = [
     image: img1, // replace with your actual image paths
     excerpt: "Transforming conventional practices into sustainable solutions.",
     readTime: "3 min ago",
-    href: "/blog/transforming-conventional-practices",
+    href: "#",
   },
   {
     id: 2,
     image: img2,
     excerpt: "Balancing development with environmental preservation.",
     readTime: "3 min ago",
-    href: "/blog/balancing-development",
+    href: "#",
   },
   {
     id: 3,
     image: img3,
     excerpt: "The long-term value of responsible growth and green innovation.",
     readTime: "3 min ago",
-    href: "/blog/responsible-growth",
+    href: "#",
   },
 ];
 
