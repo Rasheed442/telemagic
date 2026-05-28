@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function Hero() {
   return (
     <div>
-      <div className="flex justify-center md:justify-end h-[100vh] md:h-[77vh] flex-col max-w-[1300px] gap-4 m-auto px-5 w-full pt-20 md:pt-0 pb-10 md:pb-0">
+      <div className="flex justify-center md:justify-end h-[100vh] md:h-[77vh] flex-col max-w-[1300px] gap-4 m-auto px-5 w-full pt-8 md:pt-0 pb-10 md:pb-0">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

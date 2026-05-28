@@ -22,7 +22,7 @@ function About() {
             Powering Meaningful Digital Connections.
           </p>
           <p
-            style={{ fontWeight: "100" }}
+            style={{ fontWeight: "400" }}
             className="text-[15px] md:text-[16px] text-[#444] font-sans max-w-[550px] mt-4 leading-relaxed"
           >
             Telemagic Communications Limited, licensed by the Nigerian
@@ -41,7 +41,13 @@ function About() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="md:w-1/2 flex justify-center w-full"
         >
-          <Image src={about} alt="About Telemagic" width={550} height={550} className="w-full max-w-[500px] h-auto object-contain" />
+          <Image
+            src={about}
+            alt="About Telemagic"
+            width={550}
+            height={550}
+            className="w-full max-w-[500px] h-auto object-contain"
+          />
         </motion.div>
       </div>
       <div className="bg-[#082241] flex flex-col items-center gap-6 py-14 px-4 text-white">
