@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer className="w-full bg-[#020912]">
       {/* Main footer content */}
-      <div className="max-w-[1300px] mx-auto px-6 pt-16 pb-8">
+      <div className="max-w-[1300px] mx-auto px-6 pt-16 pb-16">
         <div className="flex flex-col md:flex-row gap-12 md:gap-8 justify-between">
           {/* Left: Logo + Description */}
           <div className="md:w-[35%]">
@@ -69,7 +69,7 @@ function Footer() {
       </div>
 
       {/* Large watermark text */}
-      <div className="w-full overflow-hidden select-none pointer-events-none">
+      {/* <div className="w-full overflow-hidden select-none pointer-events-none">
         <p
           className="text-center font-semibold font-serif leading-none whitespace-nowrap"
           style={{
@@ -83,7 +83,7 @@ function Footer() {
         >
           TELEMAGIC.
         </p>
-      </div>
+      </div> */}
     </footer>
   );
 }
