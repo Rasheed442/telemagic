@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import PartnersSection from "@/components/Partnersection";
 import PortfolioSection from "@/components/PortfolioSection";
 import ProductsSection from "@/components/ProductsSection";
+import TeleCreditSection from "@/components/TeleCreditSection";
 import { herobg } from "@/constant";
 import Image from "next/image";
 
@@ -22,7 +23,8 @@ export default function Home() {
         <Hero />
       </div>
       <About />
-      <ProductsSection />
+      {/* <ProductsSection /> */}
+      <TeleCreditSection />
       <PortfolioSection />
       <BlogSection />
       <ContactSection />

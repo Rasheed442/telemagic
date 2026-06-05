@@ -66,7 +66,6 @@ function ProductsSection() {
           variants={containerVariants}
           className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-14"
         >
-          {/* Left: Label + Heading */}
           <motion.div variants={itemVariants} className="md:w-1/2">
             <span className=" bg-[#D43429] text-white text-[16px] rounded-md font-medium font-ibm-plex-sans uppercase px-4 py-2 mb-5">
               PRODUCTS/SERVICE
@@ -76,7 +75,6 @@ function ProductsSection() {
             </h2>
           </motion.div>
 
-          {/* Right: Description */}
           <motion.div variants={itemVariants} className="md:w-[45%] flex items-center">
             <p className="text-[16px] text-[#444] leading-relaxed">
               Deploy a complete communication ecosystem in minutes, combining
