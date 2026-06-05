@@ -98,7 +98,7 @@ const itemVariants = {
 
 function TeleCreditSection() {
   return (
-    <section id="telecredit" className="w-full bg-white py-20 md:py-28 px-4">
+    <section id="products" className="w-full bg-white py-20 md:py-28 px-4">
       <div className="max-w-[1300px] mx-auto">
         {/* Header */}
         <motion.div

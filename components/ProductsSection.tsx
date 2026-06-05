@@ -56,7 +56,7 @@ const itemVariants = {
 
 function ProductsSection() {
   return (
-    <section id="products" className="w-full bg-white py-20 px-4">
+    <section id="#products" className="w-full bg-white py-20 px-4">
       <div className="max-w-[1300px] mx-auto">
         {/* Top Header Row */}
         <motion.div
