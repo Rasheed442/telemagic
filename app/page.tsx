@@ -27,7 +27,7 @@ export default function Home() {
       <TeleCreditSection />
       <PortfolioSection />
       {/* <BlogSection /> */}
-      <ContactSection />
+      {/* <ContactSection /> */}
       <PartnersSection />
       <Footer />
     </div>

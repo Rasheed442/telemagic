@@ -46,7 +46,7 @@ function Footer() {
               CONTACT INFORMATION
             </h4>
             <div className="flex flex-col gap-1 text-[14px] text-[#CAC7B1]">
-              <p>Phone: 234 8027338559&nbsp;&nbsp;Fax: 234 1 2798950</p>
+              {/* <p>Phone: 234 8027338559&nbsp;&nbsp;Fax: 234 1 2798950</p> */}
               <p>
                 Email:{" "}
                 <a
